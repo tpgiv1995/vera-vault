@@ -188,6 +188,20 @@ pulled, and that every session now starts with `/acclimate`.
 
 ---
 
+## Updating later
+
+When this repo gets better commands, ask Claude (in the vault folder):
+
+```text
+Update my vault's commands from https://github.com/tpgiv1995/vera-vault. Follow "Updating later" in START-HERE.md.
+```
+
+Claude downloads the kit as in Step 1, then replaces only the commands, overwriting the old copies:
+`robocopy "$kit\vera-vault-main\vault\.claude\skills" "<vault>\.claude\skills" /E /NFL /NDL`.
+Nothing else in the vault is touched. If `CLAUDE.md` changed upstream, show the owner the difference
+and merge it by hand, keeping their personalized category block. Start a new session afterwards so
+the updated commands load.
+
 ## If something goes wrong
 
 - **`/acclimate` and the other commands are not recognized:** Claude Code was not started in the vault

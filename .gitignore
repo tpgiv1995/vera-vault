@@ -1,0 +1,11 @@
+# This repo is a template. Never commit a real vault's data or Obsidian's per-machine state.
+vault/.obsidian/
+vault/.trash/
+vault/raw/**/*.md
+!vault/raw/**/
+!vault/raw/**/README.md
+vault/vera/sessions/*.md
+vault/output/*
+!vault/output/.gitkeep
+.DS_Store
+Thumbs.db
